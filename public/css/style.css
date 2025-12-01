@@ -1,44 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
+    background-color: #002554;
     font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 p {
-    color: red;
+    color: #cfb571;
 }
 
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
 }
-main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
-}
-main {
-    background-color: bisque;
+header, main, footer {
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
+/* nav ul kan ha egen regel om du vill */
+nav ul {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 9.25em);
+    gap: 1em;
+    padding: 0;
+}
+
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
+    position: relative
+}
+
+.header-img {
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: auto;
+    display: block;
+    opacity: 0.95; 
 }
 
 header h1 {
-    width:40rem;
-    margin: 0 auto;
+    position: absolute;
+    top: 35%;           
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     text-align: center;
+    color: white;
+    font-family: 'Agbalumo';
+    font-size: 36pt;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
 nav ul {
@@ -61,4 +73,80 @@ nav li {
 .Master {
     color: green;
     font-weight: bold;
+}
+
+.allergi {
+    font-weight: bold;
+    color: #e21f26;
+}
+
+#burgers {
+    background-color: #002554;
+    color: #cfb571;
+    border: 8px double #32baf2;
+    padding: 15px;
+}
+
+#orderinfo {
+    background-color: #32baf2;
+    color: #002554;
+    border: 8px double #002554;  
+    padding: 15px; 
+}
+
+#orderinfo p,
+#orderinfo label {
+    color:#002554;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #002554;
+    color: #cfb571;             
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #003f92;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 83, 160, 0.4);
+}
+
+section {
+    margin:0;
+}
+
+.burger {
+    width: 180px;
+    padding: 10px;
+
+    background-color: #002554; /* DIF-blå transparens */
+    border-radius: 10px;
+}
+
+.burger img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.burger:hover {
+    transform: scale(1.04);
+    transition: 0.2s;
+    box-shadow: 0 0 12px rgba(50, 186, 242, 0.5);
+}
+
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
 }

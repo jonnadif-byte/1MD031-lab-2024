@@ -1,60 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>Burgiiir</title>
+    <title>Blåränderna</title>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="public/css/style.css">
   </head>
   <body>
     <header>
-        <h1>Välkommen till Burgiiir</h1>
+        <img src="public/img/diffen.png" alt="Tifo" class="header-img">
+        <h1>Välkommen till Blåränderna!</h1>
     </header>
     <main>
 
-        <section>
-            <h2>Välj din burgir</h2>
-            <div style="display: inline-block; vertical-align: top; margin-right: 10px; width: 200px;">
-                <h3>Priske</h3>
-                <img
-                    src="https://www.visitstockholm.se/media/images/BB_kampanj_feb_SQUARE.width-768.jpg"
-                    alt="Saftig burgir"
+        <section id="burgers">
+            <h2>Välj din burgare:</h2>
+
+            <div class="burger-grid">
+              <div class="burger">
+                  <h3>August Priske</h3>
+                  <img
+                      src="https://www.visitstockholm.se/media/images/BB_kampanj_feb_SQUARE.width-768.jpg"
+                      alt="Saftig burgir"
+                      style="width: 200px; height:200px; object-fit: cover;"
+                  >
+                  <p>Ät burgir som en skyttekung!</p>
+                  <ul>
+                      <li>Extra hetta likt derbypulsen</li>
+                      <li>Fri från gult kort</li>
+                  </ul>
+              </div>
+              <div class="burger">
+                  <h3>Slakthuskurvan</h3>
+                  <img 
+                    src="https://shared.cdn.smp.schibsted.com/v2/images/3fad8b85-50a4-4b4c-868d-ea07521b7f81?fit=crop&h=750&w=1000&s=ed74cdcb1edfdc52aa05620aa9e0343069964a3f"
+                    alt="Slakthuskurvan" 
                     style="width: 200px; height:200px; object-fit: cover;"
-                >
-                <p>Ät burgir som en skyttekung!</p>
-                <ul>
-                    <li>Extra hetta likt derbypulsen</li>
-                    <li>Fri från gult kort</li>
-                </ul>
-            </div>
-            <div style="display: inline-block; vertical-align: top; margin-right: 10px; width: 200px;">
-                <h3>Slakthuskurvan</h3>
-                <img 
-                  src="https://shared.cdn.smp.schibsted.com/v2/images/3fad8b85-50a4-4b4c-868d-ea07521b7f81?fit=crop&h=750&w=1000&s=ed74cdcb1edfdc52aa05620aa9e0343069964a3f"
-                  alt="Slakthuskurvan" 
-                  style="width: 200px; height:200px; object-fit: cover;"
-                >
-                <p>För dig som aldrig lämmar kurvan</p>
-                <ul>
-                  <li>Innehåller adrenalin</li>
-                  <li>Optimal att äta innan avspark</li>
-                </ul>
-            </div>
-            <div style="display: inline-block; vertical-align: top; margin-right: 10px; width: 200px;">
-                <h3>Blårandig Classic</h3>
-                <img 
-                  src="https://www.burgerdudes.se/wp-content/uploads/2025/07/bonnatosen_dubbel_pastramiburgare_13_juli_2025.jpg" 
-                  alt="Blårandig burgir" 
-                  style="width: 200px; height:200px; object-fit: cover;"
-                >
-                <p>Trygg trepoängare i burgirform.</p>
-                <ul>
-                  <li>Innehåller gluten och maxad nostalgi</li>
-                  <li>Extra cheese finns som tillval</li>
-                  <li>Rekommenderas efter seger mot Gnaget</li>
-                </ul>
+                  >
+                  <p>Energi till 90 minuters sång</p>
+                  <ul>
+                    <li>Innehåller <span class="allergi">adrenalin</span></li>
+                    <li>Optimal innan avspark</li>
+                  </ul>
+              </div>
+              <div class="burger">
+                  <h3>Blårandig Classic</h3>
+                  <img 
+                    src="https://www.burgerdudes.se/wp-content/uploads/2025/07/bonnatosen_dubbel_pastramiburgare_13_juli_2025.jpg" 
+                    alt="Blårandig burgir" 
+                    style="width: 200px; height:200px; object-fit: cover;"
+                  >
+                  <p>Trygg trepoängare i burgirform.</p>
+                  <ul>
+                    <li>Innehåller <span class="allergi">gluten</span> och maxad nostalgi</li>
+                    <li>Extra cheese finns som tillval</li>
+                    <li>Rekommenderas efter seger mot Gnaget</li>
+                  </ul>
+              </div>
             </div>
         </section>
 
-        <section>
+        <section id="orderinfo">
             <h2>Kundinformation</h2>
             <h3>Leveransinformation:</h3>
 
@@ -97,9 +102,12 @@
         </section>
 
     </main>
-    
+    <button>
+      Beställ nu!
+    </button>
+  
     <footer>
-        &copy; 2025 Burgiiir
+        &copy; 2025 Blåränderna
     </footer>
   </body>
 </html>
